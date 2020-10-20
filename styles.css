@@ -1,4 +1,40 @@
 body {
-  background-color: #f7f7f7;
+  background-color: #fabc3c;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 12.5px 25px;
+}
+
+.title {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.card {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 3.8px 7.5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+i {
+  font-size: 5rem;
+}
+
+nav {
+  box-shadow: 0 3.8px 7.5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
