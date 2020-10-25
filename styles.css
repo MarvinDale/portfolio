@@ -172,6 +172,14 @@ footer {
   .nav-active {
     transform: translate(0%);
   }
+
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 @keyframes navLinkFade {
