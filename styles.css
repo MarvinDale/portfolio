@@ -17,7 +17,6 @@ body {
 }
 
 section {
-  min-height: 20rem;
   padding: 3rem 8rem;
 }
 
@@ -119,7 +118,7 @@ i {
 }
 
 .project-card {
-  margin: 25px 10px;
+  margin: 12.5px 10px;
   width: 350px;
   height: 300px;
 }
@@ -130,6 +129,14 @@ img {
 }
 
 .contact-me {
+  background-color: #1c6e8c;
+}
+
+footer {
+  margin: 10px auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
   background-color: #1c6e8c;
 }
 
