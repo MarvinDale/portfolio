@@ -18,17 +18,18 @@
     <title>Developer Portfolio</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
       <div class="logo">
         <h4>MARVIN</h4>
       </div>
 
       <ul class="nav-links">
-        <li><a href="">HOME</a></li>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">SKILLS</a></li>
-        <li><a href="">PROJECTS</a></li>
-        <li><a href="">CONTACT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
 
       <div class="burger">
@@ -38,34 +39,101 @@
       </div>
     </nav>
 
-    <div class="profile">
-      <div class="profile-picture-div">
-        <img
-          class="profile-picture"
-          src="images/LinkedIn profile.png"
-          alt="Marvin-Dale"
-        />
-      </div>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <div class="profile">
+        <div class="profile-picture-div">
+          <img
+            class="profile-picture"
+            src="images/LinkedIn profile.png"
+            alt="Marvin-Dale"
+          />
+        </div>
 
-      <div class="profile-info">
-        <h1>MARVIN DALE</h1>
-        <span>Electronic & Computer Engineer</span>
+        <div class="profile-info">
+          <h1>MARVIN DALE</h1>
+          <p>Electronic & Computer Engineer</p>
+          <p>Software Developer</p>
 
-        <div class="profile-icons">
-          <a href="https://www.linkedin.com/in/marvindale"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/MarvinDale"
-            ><i class="fab fa-github"></i
-          ></a>
+          <div class="profile-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/marvindale"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://github.com/MarvinDale"
+              ><i class="fab fa-github"></i
+            ></a>
 
-          <a target="_blank" href="2020 Dev CV.pdf"
-            ><i class="far fa-file-pdf"></i
-          ></a>
+            <a target="_blank" href="2020 Dev CV.pdf"
+              ><i class="far fa-file-pdf"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="about-me-title">About Me</h2>
+      <p class="about-me-paragraph">
+        I'm a third year Electronic and Computer Engineering student with a
+        passion for technology and software development. Completing assignments
+        in 'Object Oriented Programming' and 'Data Structures and Algorithms'
+        has strengthened my skills and interest in programming. I'm seeking
+        opportunities to apply and improve my skills and contribute to a
+        company.
+      </p>
+    </section>
 
     <script src="app.js"></script>
+
+    <!-- Projects -->
+    <section class="portfolio" id="projects">
+      <h2 class="section-header">Projects</h2>
+
+      <div class="project-cards">
+        <div class="project-card">
+          <a class="portfolio-item" href=""
+            ><img
+              class="portfolio-image"
+              src="images/portfolio-project1.PNG"
+              alt="portfolio-image"
+          /></a>
+        </div>
+
+        <div class="project-card">
+          <a class="portfolio-item" href=""
+            ><img
+              class="portfolio-image"
+              src="images/portfolio-project1.PNG"
+              alt="portfolio-image"
+          /></a>
+        </div>
+
+        <div class="project-card">
+          <a class="portfolio-item" href=""
+            ><img
+              class="portfolio-image"
+              src="images/portfolio-project1.PNG"
+              alt="portfolio-image"
+          /></a>
+        </div>
+
+        <div class="project-card">
+          <a class="portfolio-item" href=""
+            ><img
+              class="portfolio-image"
+              src="images/portfolio-project1.PNG"
+              alt="portfolio-image"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section class="contact-me" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+    </section>
+
+    <footer></footer>
   </body>
 </html>

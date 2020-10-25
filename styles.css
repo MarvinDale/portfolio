@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -12,6 +13,25 @@ body {
   margin: 0;
   /* background: linear-gradient(45deg, #00efd1, #00acea); */
   background-color: #75c9c8;
+  color: #f8f9fa;
+}
+
+section {
+  min-height: 20rem;
+  padding: 3rem 8rem;
+}
+
+.about-me {
+  background-color: #1c6e8c;
+}
+
+.about-me-paragraph {
+  margin-top: 1rem;
+  max-width: 45ch;
+}
+
+.intro {
+  text-align: center;
 }
 
 h1 {
@@ -27,7 +47,6 @@ nav {
 }
 
 .logo {
-  color: #f8f9fa;
   letter-spacing: 5px;
   font-size: 20px;
 }
@@ -66,9 +85,6 @@ nav {
 }
 
 .profile {
-  color: #f8f9fa;
-  /* background-color: #00efd1; */
-  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,9 +110,34 @@ i {
   font-size: 25px;
 }
 
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  margin: 25px 10px;
+  width: 350px;
+  height: 300px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contact-me {
+  background-color: #1c6e8c;
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+
+  section {
+    padding: 3rem 3rem;
   }
 
   .nav-links {
