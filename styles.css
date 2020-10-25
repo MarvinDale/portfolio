@@ -14,7 +14,6 @@ body {
   /* background: linear-gradient(45deg, #00efd1, #00acea); */
   background-color: #75c9c8;
   color: #f8f9fa;
-  overflow-x: hidden;
 }
 
 section {
@@ -50,7 +49,7 @@ nav {
 }
 
 .fix-overflow {
-  position: relative;
+  /* position: relative; */
 }
 
 .logo {
@@ -140,7 +139,11 @@ img {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+  }
+
+  nav {
+    overflow: hidden;
   }
 
   section {
