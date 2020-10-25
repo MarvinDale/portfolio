@@ -48,10 +48,6 @@ nav {
   background-color: #1c6e8c;
 }
 
-.fix-overflow {
-  /* position: relative; */
-}
-
 .logo {
   letter-spacing: 5px;
   font-size: 20px;
@@ -139,12 +135,12 @@ img {
 
 @media screen and (max-width: 768px) {
   body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 
-  nav {
-    overflow: hidden;
-  }
+  /* nav {
+    overflow-x: hidden;
+  } */
 
   section {
     padding: 3rem 3rem;
