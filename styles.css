@@ -49,6 +49,10 @@ nav {
   background-color: #1c6e8c;
 }
 
+.fix-overflow {
+  position: relative;
+}
+
 .logo {
   letter-spacing: 5px;
   font-size: 20px;
