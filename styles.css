@@ -134,13 +134,13 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  /* nav {
+  /* body {
     overflow-x: hidden;
   } */
+
+  .site {
+    overflow-x: hidden;
+  }
 
   section {
     padding: 3rem 3rem;
