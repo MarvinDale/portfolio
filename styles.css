@@ -180,6 +180,12 @@ footer {
     align-items: center;
     justify-content: space-around;
   }
+
+  .project-card {
+    margin: 1rem 1rem;
+    width: 16rem;
+    height: 14rem;
+  }
 }
 
 @keyframes navLinkFade {
