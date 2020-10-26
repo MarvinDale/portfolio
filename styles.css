@@ -12,31 +12,38 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   /* background: linear-gradient(45deg, #00efd1, #00acea); */
-  background-color: #75c9c8;
+  background-color: #22a39f;
   color: #f8f9fa;
 }
 
 section {
-  padding: 3rem 8rem;
+  padding: 3rem 20rem;
+  /* height: 100vh; */
 }
 
-.about-me {
-  background-color: #1c6e8c;
-}
-
-.about-me-paragraph {
-  margin-top: 1rem;
-  max-width: 45ch;
-}
-
-.intro {
-  text-align: center;
+.site {
+  overflow-x: hidden;
 }
 
 h1 {
   text-align: center;
+  font-size: 6rem;
 }
 
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+p {
+  line-height: 2.25;
+}
+
+a {
+  color: #f8f9fa;
+}
+
+/* Navigation */
 nav {
   position: sticky;
   top: 0;
@@ -44,7 +51,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #1c6e8c;
+  background-color: #222222;
 }
 
 .logo {
@@ -56,7 +63,7 @@ nav {
   display: flex;
   justify-content: space-around;
   min-width: 40%;
-  background-color: #1c6e8c;
+  background-color: #222222;
   opacity: 0.9;
 }
 
@@ -65,13 +72,8 @@ nav {
   padding: 15px;
 }
 
-.site {
-  overflow-x: hidden;
-}
-
 .nav-links a {
   overflow-x: hidden;
-  color: #f8f9fa;
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 14px;
@@ -90,24 +92,48 @@ nav {
   transition: all 0.3s ease;
 }
 
+/* Profile */
+
+.intro {
+  text-align: center;
+}
+
 .profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .profile-picture {
   border-radius: 100%;
-  border: 5px solid #1c6e8c;
+  border: 5px solid #f3efe0;
   width: 250px;
 }
+
+.profile-picture-div {
+  margin: auto 0;
+}
+
 .profile-info {
   padding-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profile-content {
+  padding-bottom: 15vh;
+  font-size: 2rem;
 }
 
 .profile-icons {
   display: flex;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-around;
   padding: 20px 0;
 }
@@ -116,14 +142,44 @@ i {
   font-size: 25px;
 }
 
+/* About */
+.about-me {
+  background-color: #1c6e8c;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.about-me-content {
+  margin: auto 0;
+}
+
+.about-me-paragraph {
+  margin-top: 1rem;
+  max-width: 45ch;
+}
+
+.about-me-title {
+  text-align: left;
+}
+
+/* Projects */
+.portfolio {
+  background-color: #f3efe0;
+}
+
+.portfolio h2 {
+  color: #1c6e8c;
+}
+
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .project-card {
-  margin: 1rem 1rem;
+  margin: 1rem 0;
   width: 20rem;
   height: 17rem;
 }
@@ -133,8 +189,10 @@ img {
   max-height: 100%;
 }
 
+/* Contact */
 .contact-me {
   background-color: #1c6e8c;
+  height: 40vh;
 }
 
 footer {
@@ -145,6 +203,7 @@ footer {
   background-color: #1c6e8c;
 }
 
+/* Resopnsive Design */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -155,9 +214,33 @@ footer {
     text-align: center;
   }
 
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .profile-picture {
+    display: none;
+  }
+
+  .profile-content {
+    font-size: 1.25rem;
+  }
+
   .about-me-paragraph {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .about-me-title {
+    text-align: center;
+  }
+
+  .portfolio {
+    min-height: 100vh;
   }
 
   .nav-links {
