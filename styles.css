@@ -65,7 +65,12 @@ nav {
   padding: 15px;
 }
 
+.site {
+  overflow-x: hidden;
+}
+
 .nav-links a {
+  overflow-x: hidden;
   color: #f8f9fa;
   text-decoration: none;
   letter-spacing: 3px;
