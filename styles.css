@@ -17,7 +17,9 @@ body {
 }
 
 section {
-  padding: 3rem 20rem;
+  /* padding: 3rem 20rem; */
+  padding: 3rem 20%;
+
   /* height: 100vh; */
 }
 
@@ -41,7 +43,7 @@ p {
 
 .profile-content p {
   line-height: 1;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 a {
@@ -181,18 +183,68 @@ i {
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
 }
 
 .project-card {
-  margin: 1rem 0;
-  width: 20rem;
-  height: 17rem;
+  color: #f8f9fa;
+  /* width: 20vw; */
+  width: 40%;
+  height: 60vh;
+  background-color: #1c6e8c;
+  text-align: left;
+  border-radius: 1rem;
+  box-shadow: -1px 15px 30px -12px;
+  margin: 3vh 0vw;
+  display: flex;
+  flex-direction: column;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.pokedex-img {
+  background-image: url("images/pokedex.PNG");
+}
+
+.card-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  filter: contrast(70%);
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+button {
+  border: 1px solid #222222;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  width: 40%;
+  border-radius: 5px;
+  color: #222222;
 }
 
 /* Contact */
@@ -282,9 +334,7 @@ footer {
   }
 
   .project-card {
-    margin: 1rem 1rem;
-    width: 12rem;
-    height: 10rem;
+    width: 50vw;
   }
 }
 
