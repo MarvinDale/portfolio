@@ -1,360 +1,152 @@
+/* || General styles */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  /* background: linear-gradient(45deg, #00efd1, #00acea); */
-  background-color: #22a39f;
-  color: #f8f9fa;
-}
-
-section {
-  /* padding: 3rem 20rem; */
-  padding: 3rem 20%;
-
-  /* height: 100vh; */
-}
-
-.site {
-  overflow-x: hidden;
-}
-
-h1 {
-  text-align: center;
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-p {
-  line-height: 2;
-}
-
-.profile-content p {
-  line-height: 1;
-  padding: 15px 0;
+  background-color: #0a192f;
+  color: #f3f3f3;
 }
 
 a {
-  color: #f8f9fa;
+  color: #f3f3f3;
 }
 
-/* Navigation */
-nav {
-  position: sticky;
-  top: 0;
+.button {
+  color: #64ffda;
+  border: solid 1px #64ffda;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.8;
+}
+
+ul {
+  list-style: none;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: #222222;
 }
 
-.logo {
-  letter-spacing: 5px;
-  font-size: 20px;
+section {
+  width: 70vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-heading {
+  font-size: 3rem;
+}
+
+.medium-heading {
+  font-size: 2rem;
+  margin: 10px 0px 40px;
+}
+
+.small-heading {
+  color: #64ffda;
+}
+
+.email-link {
+  margin-top: 50px;
+}
+
+/* || Header */
+
+header {
+  padding: 3vh 0;
+}
+
+.nav-container {
+  justify-content: space-around;
 }
 
 .nav-links {
+  text-decoration: none;
+}
+
+/* || Landing Section */
+
+.landing-section {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-paragraph {
+  width: 50%;
+}
+
+/* || About Section */
+
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-skills-container {
   display: flex;
   justify-content: space-around;
-  min-width: 40%;
-  background-color: #222222;
-  opacity: 0.9;
 }
 
-.nav-links li {
-  list-style: none;
-  padding: 15px;
+.about-skills {
+  flex-direction: column;
+  list-style: square;
 }
 
-.nav-links a {
-  overflow-x: hidden;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 14px;
+/* || Projects Section */
+
+.project {
+  display: flex;
 }
 
-.burger {
-  display: none;
-  cursor: pointer;
+.project-p {
+  background-color: #172a45;
+  border-radius: 5px;
+  padding: 25px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #f8f9fa;
-  margin: 5px;
-  transition: all 0.3s ease;
+.project-img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
 }
 
-/* Profile */
+/* || Contact Section */
 
-.intro {
-  text-align: center;
-}
-
-.profile {
+#contact {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  height: 79vh;
+  text-align: center;
 }
 
-.profile-picture {
-  border-radius: 100%;
-  border: 5px solid #f3efe0;
-  width: 250px;
-}
-
-.profile-picture-div {
-  margin: auto 0;
-}
-
-.profile-info {
-  padding-top: 10px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.profile-content {
-  padding-bottom: 15vh;
-  font-size: 2rem;
-}
-
-.profile-icons {
-  display: flex;
-  width: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-  padding: 20px 0;
-}
-
-i {
-  font-size: 25px;
-}
-
-/* About */
-.about-me {
-  background-color: #1c6e8c;
-  display: flex;
-  justify-content: space-between;
-  height: 100vh;
-}
-
-.about-me-content {
-  margin: auto 0;
-}
-
-.about-me-paragraph {
-  margin-top: 1rem;
-  max-width: 45ch;
-}
-
-.about-me-title {
-  text-align: left;
-}
-
-/* Projects */
-.portfolio {
-  background-color: #f3efe0;
-}
-
-.portfolio h2 {
-  color: #1c6e8c;
-}
-
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
-}
-
-.project-card {
-  color: #f8f9fa;
-  /* width: 20vw; */
-  width: 40%;
-  height: 60vh;
-  background-color: #1c6e8c;
-  text-align: left;
-  border-radius: 1rem;
-  box-shadow: -1px 15px 30px -12px;
-  margin: 3vh 0vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-content {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.card-text {
-  flex: 1 1 auto;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-}
-
-.pokedex-img {
-  background-image: url("images/pokedex.PNG");
-}
-
-.card-img {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  filter: contrast(70%);
-  padding-top: 56.25%;
-  overflow: hidden;
-}
-
-button {
-  border: 1px solid #222222;
-  background-color: #f8f9fa;
-  padding: 0.5rem;
-  width: 40%;
-  border-radius: 5px;
-  color: #222222;
-}
-
-/* Contact */
-.contact-me {
-  background-color: #1c6e8c;
-  height: 40vh;
-}
-
-footer {
-  margin: 10px auto;
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  background-color: #1c6e8c;
-}
-
-/* Resopnsive Design */
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  section {
-    padding: 3rem 3rem;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  .profile-picture {
-    display: none;
-  }
-
-  .profile-content {
-    font-size: 1.25rem;
-  }
-
-  .about-me-paragraph {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .about-me-title {
-    text-align: center;
-  }
-
-  .portfolio {
-    min-height: 100vh;
-  }
-
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translate(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .nav-active {
-    transform: translate(0%);
-  }
-
-  .project-cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: none;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .project-card {
-    width: 50vw;
-  }
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translate(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+#contact p {
+  max-width: 60%;
 }
