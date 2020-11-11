@@ -142,6 +142,10 @@ header {
   list-style: square;
 }
 
+.about-img img {
+  border: #64ffda solid 3px;
+}
+
 /* || Projects Section */
 
 .project {
