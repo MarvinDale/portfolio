@@ -9,10 +9,18 @@
 
 body {
   background-color: #faf9f6;
-  color: #0a192f;
+  color: #222222;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 5rem;
+  white-space: nowrap;
+}
+
+.links {
 }
